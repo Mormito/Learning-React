@@ -1,4 +1,5 @@
 import './App.css';
+import Frase from './components/Frase';
 import HelloWorld from './components/HelloWorld';
 
 {/* toda class deve ter o nome de className JSX */}
