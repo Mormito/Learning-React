@@ -1,31 +1,23 @@
 import './App.css';
-import Frase from './components/Frase';
-import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 {/* toda class deve ter o nome de className JSX */}
 
 
 function App() {
-  const name = 'Mormito'
-
-  function sum(a,b){
-    return a+b
-  }
-
-  const url = 'https://via.placeholder.com/150'
 
   return (
     <div className="App">
-      <div>
-        <h2>Alterando JSX</h2>
-        <p>Olá, {name}</p>
-        <p>Soma: {sum(1,2)}</p>      
-        <br />
-        <img src={url} alt="My Image" />
+      <SayMyName name="Mormito"/>
+      <Pessoa 
+      photo="https://media.licdn.com/dms/image/v2/D4D03AQFMLVwOv1koNA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1712670917986?e=2147483647&v=beta&t=UTq3laQrXtnG6bbOv-uiAtXXiwYIs2SzHeQUCn5EcsQ"
+      name="Mormito" 
+      age="18" 
+      job="Student" />
       </div>
-      <HelloWorld />
-    </div>
+
   );
 }
 
-export default App;
+export default App
