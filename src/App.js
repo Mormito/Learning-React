@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 
 {/* toda class deve ter o nome de className JSX */}
 
@@ -21,6 +22,7 @@ function App() {
         <br />
         <img src={url} alt="My Image" />
       </div>
+      <HelloWorld />
     </div>
   );
 }
