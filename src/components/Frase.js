@@ -1,7 +1,9 @@
+import styles from './Frase.module.css'
+
 function Frase(){
     return(
-    <div>
-        <h3>Frase flutuante uuuuuuuu</h3>
+    <div className={styles.fraseContainer}>
+        <h3 className={styles.fraseContent}>Eu sou uma frase flutuante.</h3>
     </div>
     )
 }
